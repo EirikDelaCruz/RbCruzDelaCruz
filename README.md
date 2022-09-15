@@ -13,6 +13,7 @@ This webpage would tackle Eirik’s most favorite Valorant map, Ascent. It would
 
 WEBPAGE 2 
 Information about Eirik’s top 2nd favorite Valorant map, Haven, would be found here. Map images, lore, a fun fact section, and a few noteworthy memories would be found on here. A montage of this map would be linked.
+
 WEBPAGE 3 (will be submitted this quarter)
 This page will focus on Split, Eirik’s 3rd favorite Valorant map. Information included would be map images, lore, and fun facts. Noteworthy moments of this map’s history would be highlighted in homage to its removal in the active map pool, meaning that it is no longer playable in unrated and competitive play.
 
@@ -25,4 +26,17 @@ This webpage would tackle Valorant’s map Fracture, which is Milo’s second fa
 WEBPAGE 6
 This webpage would tackle Valorant’s map Bind, Milo’s third favorite map. Several information about the map (map images, cinematics, setups for certain agents, and lore) would be scattered around the page. A montage of this map would be linked to give players an idea of gameplay on the map.
 
+
 WIREFRAME:
+
+HOMEPAGE:
+
+![image](https://user-images.githubusercontent.com/112594469/190385581-8672cfe0-ff3d-47a3-a233-33d78d652a15.png)
+
+WEBPAGE 1 (EIRIK):
+
+![image](https://user-images.githubusercontent.com/112594469/190386535-f4434532-088e-49a1-990a-bbd649535d8e.png)
+
+WEBPAGE 2 (MILO):
+
+![image](https://user-images.githubusercontent.com/112594469/190386888-636958f0-88c2-4a78-ba1c-cb40bd0fded3.png)
