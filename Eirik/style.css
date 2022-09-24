@@ -1,0 +1,25 @@
+body {
+    margin: 0
+}
+
+
+
+    .leftBox {
+      float: left;
+      margin-right: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    
+      display: block;
+    }
+
+    .rightBox {
+      float: right;
+      margin-left: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: block;
+      
+    }
+
+ 

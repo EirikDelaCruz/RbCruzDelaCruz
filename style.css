@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  width: 100%;
+
+  padding-right: 10px
+}
+
+table {
+
+  border: 2px solid black;
+  margin: 10px
+  
+}
+
+#thhis {
+
+  border-right: 5px solid black;
+    
+}
+
+#thdev {
+
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  
+}
+
+#thcurr {
+
+  border-left: 5px solid black;
+  
+}
+
+#histleft{
+
+  border-right: 5px solid black;
+  
+}
+
+#DEVELCENT{
+
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  
+}
+
+#curright{
+
+  border-left: 5px solid black;
+  
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Split{
+
+  position: relative;
+}
+
+
+.top-left {
+  position: absolute;
+  bottom: 500px;
+  left: 50px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: bold;
+  
+}
+
+.middle-left {
+  border-radius: 30px;
+  position: absolute;
+  bottom: 450px;
+  right: 100px;
+  color: #ffffff;
+  background-color: rgba(220, 63, 77, 60%);
+  padding: 1%
+  
+}
+
+
+
+.bottom-left {
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: rgba(206, 147, 156, 100%);
+  position: absolute;
+  bottom: 350px;
+  right: 150px;
+  color: black;
+  padding:10px;
+  
+  
+}
+
+.Icebox {
+
+  position: relative;
+  
+}
+
+
+
+.middle-right {
+  position: absolute;
+  border-radius: 30px;
+  bottom: 400px;
+  right: 50px;
+  color: #ffffff;
+  background-color: rgba(220, 63, 77, 60%);
+  padding: 1%
+  
+
+}
+
+.bottom-right {
+
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: rgba(220, 63, 77, 60%);
+  position: absolute;
+  bottom: 350px;
+  right: 50px;
+  color: black;
+  padding: 10px;
+  
+}
