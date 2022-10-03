@@ -3,23 +3,57 @@ body {
 }
 
 
-
-    .leftBox {
-      float: left;
-      margin-right: 5px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    
-      display: block;
+.head{
+  width: auto; 
+  height: 60px; 
+  background-color: teal;
+}
+.leftBox {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 49.5%;
+  display: block;
+  height: 1300px;
+  background-color: indianred;
     }
 
-    .rightBox {
-      float: right;
-      margin-left: 5px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      display: block;
-      
+.rightBox {
+  float: right;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  width: 49.5%; 
+  height: 1300px; background-color: aquamarine;
     }
 
- 
+.mapLayout {
+  margin-top: 10px; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+  margin-bottom: 10px; 
+  float: left; 
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0,0,0,0.5);
+  transition: 0.2s;
+}
+
+.mapLayout:hover {
+  transform: scale(1.5) translate(25%,25%);
+
+}
+
+.spacewhite {
+  white-space: pre;
+  display: inline-block;
+  float: right;
+}
+
+.mapFanart {
+  width: 97%;
+  margin-top: 20px;
+  margin-left: 10px;
+}
