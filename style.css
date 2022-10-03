@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-
+ margin: 0px;
   padding-right: 10px
 }
 
@@ -15,25 +15,35 @@ table {
 #thhis {
 
   border-right: 5px solid black;
-    
+  font-size: 30px;
+  background-color:#b6495f
 }
 
 #thdev {
 
   border-left: 5px solid black;
   border-right: 5px solid black;
-  
+  font-size: 30px;
+  background-color:#b6495f
 }
 
 #thcurr {
 
   border-left: 5px solid black;
+  font-size: 30px;
+  background-color:#b6495f
+}
+
+tr {
+
+  background-color: #9c959d
   
 }
 
 #histleft{
 
   border-right: 5px solid black;
+  text-align: left;
   
 }
 
@@ -41,13 +51,13 @@ table {
 
   border-left: 5px solid black;
   border-right: 5px solid black;
-  
+  text-align: center;
 }
 
 #curright{
 
   border-left: 5px solid black;
-  
+  text-align: right;
 }
 
 body {
@@ -58,10 +68,17 @@ body {
 .Split{
 
   position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
+div.Split p {
 
-.top-left {
+  text-align:center;
+  
+}
+
+.split-right-title {
   position: absolute;
   bottom: 500px;
   left: 50px;
@@ -71,42 +88,56 @@ body {
   
 }
 
-.middle-left {
+.split-right-middle {
   border-radius: 30px;
+  width: 400px;
   position: absolute;
   bottom: 450px;
   right: 100px;
   color: #ffffff;
   background-color: rgba(220, 63, 77, 60%);
   padding: 1%
-  
+
 }
 
 
 
-.bottom-left {
+.split-right-bottom {
   text-decoration: none;
+  text-align: center;
   border-radius: 25px;
-  background-color: rgba(206, 147, 156, 100%);
+  background-color: rgba(220, 63, 77, 60%);
   position: absolute;
-  bottom: 350px;
-  right: 150px;
-  color: black;
+  bottom: 400px;
+  right: 100px;
+  color: white;
   padding:10px;
   
   
 }
 
-.Icebox {
+.split-right-bottom:hover {
 
-  position: relative;
+  background-color: rgba(220, 63, 77, 100%);
+  color: white;
   
 }
 
 
 
-.middle-right {
+
+.Icebox {
+
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+.icebox-middle-right {
   position: absolute;
+  width: 400px;
   border-radius: 30px;
   bottom: 400px;
   right: 50px;
@@ -117,9 +148,10 @@ body {
 
 }
 
-.bottom-right {
+.icebox-bottom-right {
 
   text-decoration: none;
+  text-align: middle;
   border-radius: 25px;
   background-color: rgba(220, 63, 77, 60%);
   position: absolute;
@@ -127,5 +159,12 @@ body {
   right: 50px;
   color: black;
   padding: 10px;
+  
+}
+
+.icebox-bottom-right:hover {
+
+  background-color: rgba(220, 63, 77, 100%);
+  color: white;
   
 }
