@@ -2,9 +2,16 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0px;
-  background-color: #672e37;
+  background-color: #3c3a4c;
   
 }
+
+*{
+ box-sizing: border-box; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
 
 
 body {
@@ -17,7 +24,7 @@ body {
 
   width: 1550px;
   padding: 10px;
-  background-color: #ce9e9c;
+  background-color: #672e37;
   
 }
 
@@ -38,10 +45,12 @@ body {
 .top-left {
   border-radius: 30px;
   padding: 10px;
-  margin: 100px;
-  width: 300px;
+  margin: 60px;
+  width: 400px;
   text-align:right;
+  font-family: 'Voces', cursive;
   float:left;
+  clear:right;
   color:white;
   background-color: #f94555;
 }
@@ -63,10 +72,12 @@ body {
 .middle-right {
 
   border-radius: 30px;
-  margin: 100px;
+  margin: 70px;
   padding: 10px;
-  width: 300px;
+  width: 400px;
+  font-family: 'Voces', cursive;
   float: right;
+  clear:right;
   color:white;
   background-color: #f94555;
 }
@@ -74,7 +85,7 @@ body {
 .middle-left {
 
   float: left;
-  
+  clear: left;
 }
 
 .Lineups {
@@ -86,17 +97,18 @@ body {
 .Viper {
 
   float: left;
-  clear: left;
+  clear:both;
 }
 
 .Sova {
 
   float: left;
+  clear: right;
   
 }
 
 .Brimstone {
 
   float: left;
+  clear: right;
 }
-
