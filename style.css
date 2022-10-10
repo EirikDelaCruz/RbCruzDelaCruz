@@ -8,20 +8,13 @@ html, body {
 table {
 
   border: 2px solid black;
-  margin: 10px
+  margin: 10px;
+  padding: 10px; 
   
 }
 
 #thhis {
 
-  border-right: 5px solid black;
-  font-size: 30px;
-  background-color:#b6495f
-}
-
-#thdev {
-
-  border-left: 5px solid black;
   border-right: 5px solid black;
   font-size: 30px;
   background-color:#b6495f
@@ -44,20 +37,14 @@ tr {
 
   border-right: 5px solid black;
   text-align: left;
-  
-}
-
-#DEVELCENT{
-
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  text-align: center;
+  width: 50%;
 }
 
 #curright{
 
   border-left: 5px solid black;
   text-align: right;
+  width: 50%;
 }
 
 body {
@@ -154,13 +141,19 @@ div.Split p {
   
 
 }
+
 .icebox-middle-right:hover {
   transform: scale(1.5) translate(-50%,0%);
   
 }
 
-.icebox-bottom-right {
+.icebox-middle-right:hover ~ .backgroundFade{
+  background-color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0)
+}
 
+.icebox-bottom-right {
+  
   text-decoration: none;
   text-align: middle;
   border-radius: 25px;
@@ -173,9 +166,21 @@ div.Split p {
   
 }
 
-.icebox-bottom-right:hover {
 
+.icebox-bottom-right:hover {
+  
   background-color: rgba(220, 63, 77, 100%);
   color: white;
   
+}
+
+
+
+.backgroundFade {
+  
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,0);
+  transition: 0.2s;
+  z-index:30;
 }
