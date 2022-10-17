@@ -1,11 +1,13 @@
 body {
-    margin: 0
+    margin: 0;
+    box-sizing: collapse;
 }
 
 
 .head{
   width: auto; 
   height: 60px; 
+  display: flex;
   background-color: teal;
 }
 .leftBox {
@@ -43,6 +45,7 @@ body {
 
 .mapLayout:hover {
   transform: scale(1.5) translate(25%,25%);
+  
 
 }
 
@@ -56,4 +59,36 @@ body {
   width: 97%;
   margin-top: 20px;
   margin-left: 10px;
+}
+
+#funFACT {
+  margin-left:10px;
+  margin-top:10px;
+  margin-right: 10px;
+  overflow: auto;
+  border: solid 2px;
+  float:right; 
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height:250px;
+  position: relative;
+  display: block;
+  
+  background-color: white;
+}
+
+.funfactTEXT {
+  
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+#headerSPLIT {
+
+  text-align: center;
+  
+}
+.logo{
+  float: left;
 }
