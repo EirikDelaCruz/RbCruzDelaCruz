@@ -1,34 +1,43 @@
-body {
-    margin: 0;
-    box-sizing: collapse;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200&family=Voces&display=swap');
+
+html{
+  zoom: 200%;
+}
+* {
+  
+  font-family: 'Montserrat', sans-serif; 
+    
 }
 
-
+body{
+  color: white;
+}
 .head{
-  width: auto; 
+  
+  text-align: center;
   height: 60px; 
   display: flex;
   background-color: teal;
 }
 .leftBox {
+  
   float: left;
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 49.5%;
+  overflow: hidden;
+  
+  width: 50%;
   display: block;
-  height: 1000px;
-  background-color: indianred;
+  height: 1100px;
+  background-color:  #082540;
+
     }
 
 .rightBox {
   float: right;
-  margin-left: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  overflow: hidden;
   display: block;
-  width: 49.5%; 
-  height: 1000px; background-color: aquamarine;
+  width: 50%; 
+  height: 1100px; 
+  background-color: #0D4848;
     }
 
 .mapLayout {
@@ -49,21 +58,18 @@ body {
 
 }
 
-.spacewhite {
-  white-space: pre;
-  display: inline-block;
-  float: right;
-}
+
 
 .mapOverhead {
-  width: 97%;
-  margin-left: 10px;
+  width: 98%;
+  margin: auto;
 
-  margin-top: 20px;
+  margin-top: 10px;
   
 }
 
 #funFACT {
+  color: black;
   margin-left:10px;
   margin-top:10px;
   margin-right: 10px;
@@ -72,7 +78,7 @@ body {
   float:right; 
   bottom: 0;
   right: 0;
-  width: 300px;
+  width: 97%;
   height:250px;
   position: relative;
   display: block;
@@ -83,14 +89,13 @@ body {
 .funfactTEXT {
   
   padding: 0;
+  width: 98%;
   margin-bottom: 10px;
   margin-left: 10px;
 }
-#headerSPLIT {
 
-  text-align: center;
   
-}
+
 .logo{
   float: left;
 }
@@ -109,6 +114,103 @@ body {
   margin-right: 15px; 
  
 }
-.footer {
+
+.footer{
+  background-color: #023C4D;
+}
+
+.footerReferences{
+  margin-left: 10px;
   
+  text-decoration: none;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  margin-top: 10px;
+box-sizing: collapse;
+  margin: auto;
+  
+  width: 97%;
+  
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
