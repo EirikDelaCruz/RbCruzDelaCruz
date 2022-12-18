@@ -3,6 +3,7 @@ html, body {
   width: 100%;
   margin: 0px;
   background-color: #df535e;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,14 +19,125 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* navigation style */
+
+nav {
+  background-color: #3c3a4c;
+  padding: 10px;
+  transition: 0.2s;
+  height: 70px;
+  width: 100%;
+  position:fixed;
+  margin: 0;
+  z-index: 5;
+}
+
+.logo{
+  float:left;
+}
+
+.nav a{
+  color: white;
+  float: left;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 10px;
+  transition: 0.2s
+}
+
+.nav a:not(#hamburger):hover  {
+  text-decoration: underline;
+  background-color:  #b6495f;
+}
+
+.nav a:last-of-type {
+  float: right;
+}
+
+.nav a:last-of-type:hover{
+  color: black;
+}
+
+.SplitNav:hover > .nav {
+  background-color: yellow;
+}
+
+
+.nav a:not(#hamburger):active {
+  background-color: rgba(220, 63, 77, 100%);
+}
+
+.sprite {
+	background: url('/sprite sheet.png') no-repeat -78px -14px;
+	width: 30px;
+	height: 26px;
+  margin: auto;
+    transition: 0.2s;
+  float:right;
+  position:relative;
+  top: 5px;
+}
+
+.sprite:hover {
+  
+	background: url('/sprite sheet black.png') no-repeat -78px -14px;
+	width: 30px;
+	height: 26px;
+  margin: auto;
+}
+
+.sprite2 {
+	background: url('sprite sheet.png') no-repeat -4px -3px;
+	width: 38px;
+	height: 37px;
+  transition: 0.2s;
+  float:right;
+}
+
+.sprite2:hover {
+	background: url('sprite sheet black.png') no-repeat -4px -3px;
+	width: 38px;
+	height: 37px;
+}
+
+.sprite3 {
+	background: url('sprite sheet.png') no-repeat -133px -2px;
+  width: 38px;
+	height: 28px;
+  transition: 0.2s;
+  float:right;
+  position:relative;
+  top: 5px;
+}
+
+.sprite3:hover {
+	background: url('sprite sheet black.png') no-repeat -133px -2px;
+  width: 38px;
+	height: 28px;
+}
+
+#Socmed{
+  background-color: #3c3a4c;
+  transition: 0.2s;
+  position: absolute;
+  top: 70px;
+  right: -130px;
+}
+
+
 /* top title style */
-#top {
+header {
   color: #f9b8bb;
   background-color: #3c3a4c;
-  padding: 1px 0px 0px 0px;
+  padding: 40px 0px 5px 0px;
   font-weight: 700;
   font-size: 30px;
-  height: 100px;
+  height: 110px;
+  border-top: 2px solid black;
+  z-index: 4;
+
 }
 
 /* table caption style */
@@ -42,19 +154,19 @@ table {
 }
 
 /* table heading 1 style */
-#thhis {
+#th1 {
   border-right: 5px solid black;
   font-weight: 700;
   font-size: 30px;
-  background-color:#b6495f
+  background-color:#b6495f;
 }
 
 /* table heading 2 style */
-#thcurr {
+#th2 {
   border-left: 5px solid black;
   font-weight: 700;
   font-size: 30px;
-  background-color:#b6495f
+  background-color:#b6495f;
 }
 
 /* table row style */
@@ -63,14 +175,14 @@ tr {
 }
 
 /* table data 1 style */
-#histleft{
+#tdleft{
   border-right: 5px solid black;
   text-align: left;
   width: 50%;
 }
 
 /* table data 2 style */
-#curright{
+#tdright{
   border-left: 5px solid black;
   text-align: right;
   width: 50%;
@@ -84,14 +196,14 @@ td {
 }
 
 /* Split margin and position */
-.Split{
+#Split{
   position: relative;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 /* Split title style */
-.split-right-title {
+.split-title {
   position: absolute;
   bottom: 500px;
   left: 50px;
@@ -112,6 +224,8 @@ td {
   background-color: rgba(220, 63, 77, 60%);
   padding: 1%;
   border: 4px solid white;
+  transition-delay: 0.1s;
+
 }
 
 /* Split text animation when hovered */
@@ -131,6 +245,7 @@ td {
   color: white;
   padding:10px;
   border: 2px solid white;
+  transition: 0.3s;
 }
 
 /* Split link animation when hovered */
@@ -139,8 +254,9 @@ td {
   color: white;
 }
 
+
 /* Icebox margin and position */
-.Icebox {
+#Icebox {
   position: relative;
   margin-right: 10px;
   margin-left: 10px;
@@ -158,6 +274,7 @@ td {
   background-color: rgba(220, 63, 77, 60%);
   padding: 1%;
   border: 4px solid white;
+    transition-delay: 0.1s;
 }
 
 /* Icebox text animation when hovered */
@@ -177,10 +294,123 @@ td {
   color: black;
   padding: 10px;
   border: 2px solid white;
+  transition: 0.3s;
 }
 
 /* Icebox link animation when hovered */
 .icebox-bottom-right:hover {
+  background-color: rgba(220, 63, 77, 100%);
+  color: white;
+}
+
+#Bind {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.bind-title {
+  position: absolute;
+  bottom: 500px;
+  left: 50px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* Bind text style */
+.bind-middle-right {
+  transition: 0.2s;
+  position: absolute;
+  width: 400px;
+  border-radius: 30px;
+  bottom: 400px;
+  right: 50px;
+  color: #ffffff;
+  background-color: rgba(220, 63, 77, 60%);
+  padding: 1%;
+  border: 4px solid white;
+    transition-delay: 0.1s;
+}
+
+/* Bind text animation when hovered */
+.bind-middle-right:hover {
+  transform: scale(1.5) translate(-50%,0%);
+}
+
+/* Bind link style */
+.bind-bottom-right {
+  text-decoration: none;
+  text-align: middle;
+  border-radius: 25px;
+  background-color: rgba(220, 63, 77, 60%);
+  position: absolute;
+  bottom: 350px;
+  right: 50px;
+  color: black;
+  padding: 10px;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+/* Bind link animation when hovered */
+.bind-bottom-right:hover {
+  background-color: rgba(220, 63, 77, 100%);
+  color: white;
+}
+
+#Haven {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.haven-title {
+  position: absolute;
+  bottom: 500px;
+  left: 50px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* Icebox text style */
+.haven-middle-right {
+  transition: 0.2s;
+  position: absolute;
+  width: 400px;
+  border-radius: 30px;
+  bottom: 400px;
+  right: 50px;
+  color: #ffffff;
+  background-color: rgba(220, 63, 77, 60%);
+  padding: 1%;
+  border: 4px solid white;
+    transition-delay: 0.1s;
+}
+
+/* Icebox text animation when hovered */
+.haven-middle-right:hover {
+  transform: scale(1.5) translate(-50%,0%);
+}
+
+/* Icebox link style */
+.haven-bottom-right {
+  text-decoration: none;
+  text-align: middle;
+  border-radius: 25px;
+  background-color: rgba(220, 63, 77, 60%);
+  position: absolute;
+  bottom: 350px;
+  right: 50px;
+  color: black;
+  padding: 10px;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+/* Icebox link animation when hovered */
+.haven-bottom-right:hover {
   background-color: rgba(220, 63, 77, 100%);
   color: white;
 }
@@ -196,11 +426,16 @@ td {
 }
 
 /* "References" style */
-.p1, .p2, .p3, .p4 {
+footer > p {
   padding-left: 10px;
   color: white; 
 }
 
-.footer {
+footer > p > a{
+  color: white;
+  text-decoration: none;
+}
+
+footer {
   padding-bottom: 10px; 
 }
