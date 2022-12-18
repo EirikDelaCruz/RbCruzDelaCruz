@@ -9,10 +9,10 @@
   <meta name="author" content="Eirik Bastien Dela Cruz">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="revised" content="22-09-2022">
-  <meta name="viewport" content="width=1280, initial-scale=1">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="/RbCruzDelaCruz/PisayxValo.ico" type="image/ico">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styleE1.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="/PisayxValo.ico" type="image/ico">
+  <script src="/script.js"></script>
 
 </head>
 
@@ -22,18 +22,45 @@
 
   <!--Head-->
 
-  <div class="Head" class="square" style="width: auto; height: 50px; background-color: teal">
+  <nav>
 
-    <a href="/RbCruzDelaCruz/" class="logo"><img src="/RbCruzDelaCruz/PisayxValo.ico" alt="Website Logo" height="40px" width="40px"
+
+    <a href="/index.html" class="logo"><img src="/PisayxValo.ico" alt="Website Logo" height="40px" width="40px"
         style="margin-top: 5px; margin-left: 5px"></a>
 
-  </div>
+    <a id="hamburger" onclick="Socmed()"> &#9776</a>
+
+    <div id="Socmed">
+      <a href="https://twitter.com/PlayVALORANT">
+        <div class="sprite">
+
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/playvalorantofficial/">
+        <div class="sprite2">
+
+        </div>
+      </a>
+
+      <a href="https://www.facebook.com/">
+        <div class="sprite3">
+
+        </div>
+      </a>
+
+    </div>
+
+  </nav>
+
 
   <!--leftBox-->
-  <div class="leftBox">
+  <section class="leftBox">
+
     <!--mapLAYOUT-->
     <img class="mapLayout" src="imagesEirik/MapsEirik/SPLIT_MAPLAYOUT.png" alt="Split Map Layout"
       onclick="enlargeIMG()">
+
     <!--YoutubeGuides-->
     <iframe id="razeGuide" width="300" height="200" src="https://www.youtube.com/embed/VOmBMzfzmx8"
       title="YouTube video player" frameborder="0"
@@ -46,7 +73,7 @@
       allowfullscreen></iframe>
 
 
-  <!--Split History and Lore-->
+    <!--Split History and Lore-->
     <h3>SPLIT LORE AND HISTORY</h3>
     <div align="justify" style="margin-right: 10px; margin-bottom: 10px; margin-top: 20px">Split is located in the
       district Shinjiku of
@@ -59,10 +86,7 @@
       like “Take back our home”. This emphasizes the anti-kingdom movement of those living in this area ((Wiki Targeted
       (Entertainment), n.d.) .</div>
 
-
-
-
-  <!--Split Agent Combos-->
+    <!--Split Agent Combos-->
     <h3 style="margin-top: 10px; margin-bottom: 10px;">BEST AGENT COMBOS</h3>
     <div style="margin-left: 10px; margin-right: 10px;" align="justify">
       Split is quite a huge map, requiring players to assume roles to secure every area here. Because of this, it would
@@ -89,11 +113,11 @@
 
 
 
-  </div>
+  </section>
 
 
   <!--rightBox-->
-  <div class="rightBox">
+  <section class="rightBox">
     <!--Split Map Layout Description-->
     <h3 style="text-align: center;">SPLIT'S MAP LAYOUT</h3>
     <div align="justify" style="margin-left: 10px; margin-right: 10px">This map features two planting sites called A and
@@ -181,9 +205,9 @@
         </div>
       </div>
     </div>
-    
 
-  <!--Fact box dedicated to Split's Removal-->
+
+    <!--Fact box dedicated to Split's Removal-->
     <div id="funFACT">
       <div class="funfactTEXT">
         <h3 style="margin-bottom: 10px;">A Not-So-Fun Fact</h3>
@@ -206,7 +230,7 @@
 
 
 
-  </div>
+  </section>
 
   <!--Footer-->
   <div class="footer">
