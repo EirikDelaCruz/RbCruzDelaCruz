@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0px;
-
+  background: #df535e;
   overflow-y: auto;
 
 
@@ -13,7 +13,8 @@ html, body {
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');  
 
 *{
- box-sizing: border-box; 
+  font-family: 'Montserrat', sans-serif; 
+  box-sizing: border-box; 
 }
 
 
@@ -100,3 +101,88 @@ nav {
 }
 
 /* logo linked to home screen */
+
+header{
+  left: 50%;
+  
+}
+
+h1 {
+  width: fit-content;
+  position: relative;
+  left: 46%;
+  background: lightgreen;
+}
+
+#blur {
+  transition: 0.2s;
+  background: black;
+  opacity:0.9;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  position: absolute;
+}
+
+#gallery {
+  float: left;
+  width: 930px;
+}
+
+/*605 by 340*/
+#havenA {
+  margin-left: 10px;
+  transition: 0.2s;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+#havenB {
+  transition: 0.2s;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+#havenC {
+  transition: 0.2s;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+#ORB1 {
+  transition: 0.2s;
+  object-fit: cover;
+  margin-left:10px;
+  width:452px;
+}
+
+#ORB2 {
+  transition: 0.2s;
+  object-fit: cover;
+  width:452px;
+}
+
+
+
+#textDesc {
+  float: right;
+  position: relative;
+  font-size: 20px;
+  top: 170px;
+  margin-right: 10px;
+  z-index: 0;
+  background: yellowgreen 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  text-align: center;
+  height: 240px;
+  width: 500px;
+  display: block;
+}
+
+
+
+
