@@ -2,26 +2,22 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0px;
-  background-color: #B98F6F;
+  background-color: #8A9196;;
   overflow-y: auto;
+  overflow-x: hidden;
 
   $liver-chestnut: #99745B;
 $spanish-gray: #8A9196;
 $burlywood: #E7BE98;
 $antique-brass: #B98F6F;
-$davys-grey: #585653;
+$davys-grey: #585653;  
 }
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');  
 
 *{
  box-sizing: border-box; 
-}
-
-*{
- box-sizing: border-box; 
+  transition: 0.2s;
 }
 
 /* logo linked to home screen */
@@ -102,6 +98,63 @@ nav {
   position: absolute;
   top: 35px;
   right: -120px;
+}
+
+.title {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.BindTop {
+  margin-left: 12.5%;
+  z-index: 4; 
+}
+
+#BIND1, #BIND2, #BIND3, #BIND4, #BIND5, #BIND6, #BIND7, #BIND8, #BIND9, #BIND10, #BIND11, #BIND12, #BIND13, #BIND14, #BIND15, #BIND16 {
+  opacity: 0;
+  z-index:1;
+  position: absolute;
+  left: -100px;
+  top: 300px;
+  height:280px;
+  width: 490px;
+  border: 5px solid #8A9196;
+}
+
+footer {
+  font-family: 'Voces', cursive;
+  text-align: center;
+  font-style: italics;
+}
+
+.BindMap {
+  float:left;
+  margin-top: 100px;
+  margin-left: 40px;
+  width: 960px;
+  padding-bottom: 100px;
+}
+
+#AToB1, #AToB2, #AToB3, #BToA1, #BToA2, #BToA3 {
+  width: 33%;
+  float: left;
+  clear: right;
+  z-index: 10;
+}
+
+.right {
+  transition: 0.2s;
+  border-radius: 30px;
+  margin-top: 150px;
+  margin-right: 40px;
+  float:right;
+  padding: 10px;
+  width: 400px;
+  font-family: 'Voces', cursive;
+  color:#715441;
+  background-color: #E7BE98;   
 }
 
 /* logo linked to home screen */
